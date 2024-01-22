@@ -25,10 +25,14 @@ export default function App() {
     "Duck 🦆",
   ];
 
+  // function for starting the timer
   function timerBegin() {
     timerStart()
   }
-
+  // function for stopping timer and reset timer
+  // also the logic on best time to make sure it's always the shortest time - if current time is shorter than recorded best time, or if the best time is empty, then it will
+  // update the best time with that current time
+  // also set current time with previous time
   function timerEnd() {
     timerStop()
     timerReset()
